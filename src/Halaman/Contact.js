@@ -22,7 +22,7 @@ const Contact = () => {
     const subject = `Pesan dari ${name} - Jalita Cafe`;
     const body = `Nama: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0APesan:%0D%0A${message}%0D%0A%0D%0A---%0D%0APesan ini dikirim dari website Jalita Cafe.`;
     
-    window.location.href = `mailto:damarjatiwidodo@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:bayurendragraha@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
     setFormData({ name: '', email: '', message: '' });
     
