@@ -1,38 +1,98 @@
-.App {
+/* Tambahkan ini ke App.css */
+
+/* Section Styles */
+.section-padding {
+  padding: 100px 0;
+}
+
+.section-header {
   text-align: center;
+  margin-bottom: 60px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: var(--dark);
+  margin-bottom: 15px;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+  font-weight: 300;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.divider {
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* Container adjustments */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Button styles for menu */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: var(--primary);
   color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+  background-color: #e09a6b;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(237, 173, 127, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Price tag styling */
+.price-tag {
+  background-color: var(--light);
+  color: var(--primary);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 70px 0;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-padding {
+    padding: 50px 0;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
   }
 }
